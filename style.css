@@ -113,6 +113,7 @@ aside {
 	top: calc(7.525% * 2 + 23.3%);
 }
 
+
 /* NAVBAR */
 nav {
 	float: right;
@@ -139,6 +140,13 @@ nav ol li {
 
 .active-waypoint {
 	background-color: #D12121;
+transform:rotate(180deg);
+-webkit-transform:rotate(180deg); /* Safari */
+transition:width 2s, height 2s, transform 2s;
+-webkit-transition:width 2s, height 2s, -webkit-transform 2s; 
+transform: scale(2,1);
+-ms-transform: scale(2,1); /* IE 9 */
+-webkit-transform: scale(2,1); /* Safari and Chrome */
 }
 
 li div {
