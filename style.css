@@ -14,33 +14,41 @@ body {
 }
 
 header, footer {
-	background-color: #333;
-
-	height: 64px;
-
-	line-height: 64px; /* By making the line-height as tall as the header, we vertically center the text */
-
-	color: #EEE;
-	font-family: "Lily Script One", cursive;
-	font-size: 2em;
+	background-color: #706a61;
+	height: 100px;
+	line-height: 100px; /* By making the line-height as tall as the header, we vertically center the text */
+	color: #150d02;
+	font-family: 'Josefin Slab', serif;
+	font-size: 3em;
 	text-align: center;
-	text-transform: uppercase;
-	letter-spacing: 0.35em;
-
+	font-weight: 400;
 	width: 100%;
 }
 
+header {
+	background: url(sky.jpg);
+}
+
+footer {
+	background: url(bottom.png) repeat;
+	border-top: 2px solid #2e291d;
+}
 
 main {
 	min-width: 960px;
-	height: calc(100% - 2*64px);
-	background-color: gray;
+	height: calc(100% - 2*100px);
+	background-color: #a49d8b;
+    background: url(bg.jpg) repeat;
 }
 
 #content {
 	height: 100%;
 	min-width: 960px;
 	position: relative;
+}
+
+img {
+	width: 100%;
 }
 
 video {
@@ -52,13 +60,10 @@ video {
 }
 
 #detail {
-	background-color: #AAA;
-
+	background-color: #3A362E;
 	position: absolute;
-	
 	height: 23.3%;
 	top: calc(100% - 23.3% - 7.525%);
-
 	left: calc(50% - 320px / 2 - 128px * 1.5);
 	right: calc(50% - 320px / 2 - 128px * 1.5);
 }
@@ -68,24 +73,19 @@ http://apps.eky.hk/css-triangle-generator/ and
 http://codepen.io/chriscoyier/pen/lotjh */
 #next-triangle {
 	position: absolute;
-
 	width: 0;
 	height: 0;
-
 	border-left: 61px solid transparent;
 	border-right: 61px solid transparent;
-	border-top: 30.75px solid black;
-
+	border-top: 30.75px solid #565346;
 	left: calc(50% - 61px);
 	top: calc(100% - (7.525% + 30.75px)/2);
-
 	font-size: 0;
-
 	line-height: 0;
 }
 
 #next-triangle:hover {
-	border-top: 30.75px solid #555;
+	border-top: 30.75px solid #565346;
 }
 
 /* DETAIL PANELS */
@@ -97,12 +97,22 @@ aside {
 
 .right {
 	right: calc(50% - 320px / 2 - 128px * 1.5);
-	background-color: #555;
+}
+
+.right:hover {
+	transform: scale(2,2);
+	-ms-transform: scale(2,2); /* IE 9 */
+	-webkit-transform: scale(2,2); /* Safari and Chrome */
 }
 
 .left {
 	left: calc(50% - 320px / 2 - 128px * 1.5);
-	background-color: #CCC;
+}
+
+.left:hover {
+	transform: scale(2,2);
+	-ms-transform: scale(2,2); /* IE 9 */
+	-webkit-transform: scale(2,2); /* Safari and Chrome */
 }
 
 .top {
@@ -132,24 +142,34 @@ nav ol {
 nav ol li {
 	width: 100%;
 	height: 10%;
-	background-color: black;
+	background-color: #a49d8b;
 	padding: 0;
 	margin: 0;
+	background: url(right.png) fixed;
 }
 
 .active-waypoint {
-	background-color: #D12121;
+	background-color: #90887B;
 }
 
 li div {
-	background-color: #EEE;
-
+	background-color: #150d02;
 	position: relative;
 	top: 19px;
-
-	width: 16px;
-	height: 16px;
-
+	width: 20px;
+	height: 20px;
 	margin-right: auto;
 	margin-left: auto;	
+
+}
+
+li div:hover {
+	background-color: #eee;
+	 transform:rotate(180deg);
+	-webkit-transform:rotate(180deg); /* Safari */
+	transition:width 2s, height 2s, transform 2s;
+	-webkit-transition:width 2s, height 2s, -webkit-transform 2s; 
+	transform: scale(2,1);
+	-ms-transform: scale(2,1); /* IE 9 */
+	-webkit-transform: scale(2,1); /* Safari and Chrome */
 }

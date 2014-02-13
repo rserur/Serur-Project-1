@@ -10,6 +10,8 @@ if (document.addEventListener) {
 
 
 var waypoints = document.getElementsByClassName('waypoint');
+var triangle = document.getElementsById('next-triangle');
+
 for (i = 0; i < waypoints.length; i++) {
 	// Here we attach a handler to the click event for every waypoint,
 	// https://developer.mozilla.org/en-US/docs/Web/Reference/Events/click
@@ -36,7 +38,7 @@ function updateWaypoints() {
 	}
 
 	// Seek to the proportional time of the 38s clip of Bey's "Countdown"
-	document.getElementById('Countdown').currentTime = fractionScrolled * 38.0;
+	document.getElementById('Just').currentTime = fractionScrolled * 255.0;
 }
 
 function waypointClickHandler(e) {
