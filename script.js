@@ -1,5 +1,5 @@
-var scrollTotal = 1000;
-var scrolled = 0; // A variable to keep track of how far we've scrolled.
+var scrollTotal = 900;
+var scrolled = 200; // A variable to keep track of how far we've scrolled.
 var fractionScrolled = scrolled / scrollTotal;
 
 
@@ -8,10 +8,12 @@ if (document.addEventListener) {
 	document.addEventListener("mousewheel", MouseWheelHandler, false);
 }
 
+// triangle variable and new click event listener
+var triangle  = document.getElementById('next-triangle');
+triangle.addEventListener("click", triangleClickHandler, false);
+
 
 var waypoints = document.getElementsByClassName('waypoint');
-var triangle = document.getElementsById('next-triangle');
-
 for (i = 0; i < waypoints.length; i++) {
 	// Here we attach a handler to the click event for every waypoint,
 	// https://developer.mozilla.org/en-US/docs/Web/Reference/Events/click
@@ -52,6 +54,13 @@ function waypointClickHandler(e) {
 	}
 }
 
+// advance waypoint when triangle is clicked
+function triangleClickHandler(e) {
+	console.log('cilck');
+	scrolled += 100;
+	updateWaypoints();
+	console.log(scrolled);
+}
 
 function MouseWheelHandler(e) {
 	// This function is called every time there's a mousewheelevent

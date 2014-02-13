@@ -100,6 +100,8 @@ aside {
 }
 
 .right:hover {
+	transition: width 1s, height 1s, transform 1s;
+	-webkit-transition: width 1s, height 1s, -webkit-transform 1s;
 	transform: scale(2,2);
 	-ms-transform: scale(2,2); /* IE 9 */
 	-webkit-transform: scale(2,2); /* Safari and Chrome */
@@ -110,6 +112,8 @@ aside {
 }
 
 .left:hover {
+	transition: width 1s, height 1s, transform 1s;
+	-webkit-transition: width 1s, height 1s, -webkit-transform 1s;
 	transform: scale(2,2);
 	-ms-transform: scale(2,2); /* IE 9 */
 	-webkit-transform: scale(2,2); /* Safari and Chrome */
