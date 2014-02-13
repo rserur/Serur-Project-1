@@ -49,8 +49,9 @@ main {
 
 img {
 	width: 100%;
-	border-radius: 20%;
+	border-radius: 10%;
 	border: 2px solid #2e291d;
+	box-shadow: 1px 3px 10px #3A362E;
 }
 
 video {
@@ -59,6 +60,9 @@ video {
 	left: calc(50% - 320px / 2);
 	height: 180px;
 	width: 320px;
+	border-radius: 10%;
+	border: 2px solid #2e291d;
+	box-shadow: 1px 3px 10px #3A362E;
 }
 
 #detail {
@@ -79,7 +83,7 @@ http://codepen.io/chriscoyier/pen/lotjh */
 	height: 0;
 	border-left: 61px solid transparent;
 	border-right: 61px solid transparent;
-	border-top: 30.75px solid #565346;
+	border-top: 30.75px solid #2e291d;
 	left: calc(50% - 61px);
 	top: calc(100% - (7.525% + 30.75px)/2);
 	font-size: 0;

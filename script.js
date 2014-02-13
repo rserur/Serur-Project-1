@@ -47,7 +47,7 @@ function waypointClickHandler(e) {
 	console.log('cilck');
 	for (i = 0; i < waypoints.length; i++) {
 		if (waypoints[i] === this) {
-			scrolled = (i+1)*100;
+			scrolled = (i+1)*25;
 			updateWaypoints();
 			console.log(scrolled);
 		}
@@ -57,7 +57,7 @@ function waypointClickHandler(e) {
 // advance waypoint when triangle is clicked
 function triangleClickHandler(e) {
 	console.log('cilck');
-	scrolled += 100;
+	scrolled += 25;
 	updateWaypoints();
 	console.log(scrolled);
 }
