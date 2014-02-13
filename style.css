@@ -21,7 +21,7 @@ header, footer {
 	font-family: 'Josefin Slab', serif;
 	font-size: 3em;
 	text-align: center;
-	font-weight: 400;
+	font-weight: 700;
 	width: 100%;
 }
 
@@ -49,6 +49,8 @@ main {
 
 img {
 	width: 100%;
+	border-radius: 20%;
+	border: 2px solid #2e291d;
 }
 
 video {
